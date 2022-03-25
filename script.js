@@ -31,10 +31,12 @@ $(document).ready(function () {
       });
 
 
-//            $(".menu-icon").on("click", function () {
-//                  $("nav ul").removeClass("showing");
-//            });
-//      });
+            $("nav ul a").on("click", function () {
+                  $("nav ul").removeClass("showing");
+            });
+
+
+
 
       // Scrolling Effect
 
