@@ -24,22 +24,11 @@ header {
       text-align: justify;
 }
 
-.logo {
-      line-height: 30px;
-      position: fixed;
-      float: left;
-      margin: 16px 46px;
-      color: #4964A2;
-      font-weight: bold;
-      font-size: 20px;
-      letter-spacing: 2px;
-}
-
 nav {
       position: fixed;
       width: 100%;
       line-height: 60px;
-      z-index:100;
+      z-index:1000;
 }
 
 nav ul {
@@ -49,9 +38,9 @@ nav ul {
       overflow: hidden;
       color: #4964A2;
       padding: 0;
-      text-align: right;
+      text-align: center;
       margin: 0;
-      padding-right: 40px;
+      padding-right: 20px;
       transition: 1s;
 }
 
@@ -61,7 +50,7 @@ nav.black ul {
 
 nav ul li {
       display: inline-block;
-      padding: 16px 40px;;
+      padding: 16px 30px;;
 }
 
 nav ul li a {
@@ -70,8 +59,12 @@ nav ul li a {
       font-size: 16px;
 }
 
+a:hover {
+    color: lightseagreen;
+}
+
 .menu-icon {
-      line-height: 40px;
+      line-height: 30px;
       width: 100%;
       background-color: mintcream;
       text-align: right;
@@ -82,7 +75,7 @@ nav ul li a {
       display: none;
 }
 
-@media(max-width: 786px) {
+@media(max-width: 1000px) {
 
       .logo {
             position: fixed;
@@ -101,13 +94,13 @@ nav ul li a {
       }
 
       .showing {
-            max-height: 34em;
+            max-height: 38em;
       }
 
       nav ul li {
             box-sizing: border-box;
             width: 100%;
-            padding: 24px;
+            /*padding: 24px;*/
             text-align: center;
       }
 
@@ -116,23 +109,6 @@ nav ul li a {
       }
 
 }
-
-
-.socials {
-  list-style: none;
-  margin: 0;
-  /*display: block;*/
-  padding-left: 0px;
-  float: right;
-  width: 15%;
-}
-
-.socials img {
-  width: 30%;
-  height: 30%;
-}
-
-
 
 
 #loaderBg {
@@ -287,7 +263,7 @@ p{
     margin-bottom: -20px;
 }
 
-h5{
+h5 {
     font-size: 150%;
     font-weight: 700;
     text-align: left;
@@ -316,6 +292,15 @@ h6 {
     margin: 40px 0;
 }
 
+@media(max-width: 1000px) {
+
+      .content h1 {
+          font-size: 200%;
+          font-weight: bold;
+        }
+}
+
+
 hr.horizontalLine {
     border-top: 1px solid rgba(167, 167, 167, 0.3);
     width: 80%;
@@ -335,12 +320,24 @@ hr.horizontalLine {
     padding: 40px 0px 40px 0px;
 }
 
+/*//Plants in Titles*/
+
+/*
+.plant {
+  z-index: 3;
+}
+*/
+
 
 /*rotating titles*/
 .rotate {
   animation: rotation 8s infinite linear;
   margin-top: -20px;
   margin-right: 20px;
+/*
+  z-index: 1;
+  position: absolute;
+*/
 }
 
 @keyframes rotation {
@@ -458,16 +455,16 @@ hr.horizontalLine {
 }
 
 .profile img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
 }
 
 .card {
     border-radius: 15px;
     margin-left: 20px;
     margin-right: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2)
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
     width: 60px;
 }
 
@@ -487,7 +484,7 @@ hr.horizontalLine {
   font-size: 15px;
 }
 .timeline:before {
-  top: 40px;
+  top: 20px;
   bottom: 0;
   position: absolute;
   content: " ";
@@ -602,7 +599,7 @@ hr.horizontalLine {
 }
 .timeline-horizontal .timeline-item {
   display: table-cell;
-  height: 280px;
+  height: 240px;
   width: 20%;
   min-width: 320px;
   float: none !important;
