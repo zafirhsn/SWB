@@ -277,8 +277,8 @@ h6 {
 .content h1 {
     color: #22A39F;
     font-size: 300%;
-    text-align: left;
-    padding-left: 23%;
+    text-align: center;
+
 }
 
 .content h2 {
@@ -321,12 +321,18 @@ hr.horizontalLine {
 }
 
 /*//Plants in Titles*/
-
-/*
 .plant {
+  position: relative;
+  right: 195px;
   z-index: 3;
 }
-*/
+
+/* Section Headings */
+.section-heading {
+  white-space: nowrap;
+  margin-top: 40px;
+  text-align: center;
+}
 
 
 /*rotating titles*/
@@ -450,27 +456,48 @@ hr.horizontalLine {
 }
 */
 
+.team-container {
+  margin-top: 100px;
+}
+
 .mt-100 {
     margin-top: 50px
 }
 
-.profile img {
-    width: 120px;
-    height: 120px;
+img.profile {
+    top: -50px;
+    max-width: 120px;
+    min-width: 80px;
+    width: 40%;
+    height: auto;
     border-radius: 50%;
+    position: absolute;
 }
 
 .card {
+    align-items: center;
     border-radius: 15px;
     margin-left: 20px;
     margin-right: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
     width: 60px;
+    margin-bottom: 64px;
+}
+
+.card-content {
+  padding-top: 64px;
+  padding-bottom: 32px;
 }
 
 .card-body {
     position: relative;
-    bottom: 60px
+}
+
+
+@media screen and (max-width: 768px) {
+  .team-link {
+    width: 10%;
+  }
 }
 
 
@@ -666,26 +693,25 @@ hr.horizontalLine {
 
 
 /*///utilities*/
-
-/*
 .utilities {
     display: flex;
     flex-direction: column;
     width: 100%;
     flex: 0 0 auto;
-}*/
-
-.utilityrow1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.utilityrow2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.utility-row {
+  display: flex;
+  margin: 16px;
 }
-.utilitycolumn{
-    padding-left: 20px;
+
+img.utility-icon {
+  width: 50%;
+}
+
+.utility-content {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 16px;
+  text-align: center;
 }
